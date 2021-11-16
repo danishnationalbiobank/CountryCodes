@@ -81,7 +81,7 @@
             let currentCountryCode = '';
 
             for (const [key, value] of Object.entries(mappedCountries)) {
-                if (value == country) {
+                if (value.toLowerCase() == country.toLowerCase()) {
                     currentCountryCode = key;
                 }
             }
